@@ -178,6 +178,10 @@ li {
     width: 100px;
 }
 
+/************************MODAL*******************************/
+
+
+
 
 
 /* media querries */
@@ -222,7 +226,7 @@ li {
     grid-template-columns: 15% 85%;
     height: 100%;
     grid-gap: 20px;
-    
+
 }
 
 
@@ -270,7 +274,7 @@ ul > li > i {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    
+
 }
 
 
@@ -283,9 +287,9 @@ ul > li > i {
 
 .stat{
     display:grid;
-    grid-template-columns: 30% 70%; 
+    grid-template-columns: 30% 70%;
     background-color: ghostwhite;
-    
+
 }
 
 .stat .fab{
@@ -297,7 +301,7 @@ ul > li > i {
     background-color: rgb(48, 110, 204);
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
 }
 
 .stat2_icon{
@@ -320,10 +324,16 @@ ul > li > i {
     background-color: lightgray;
 }
 
-.x{
-    grid-column: 2/3;
+.container_chartjs {
+  width: 80%;
+  margin: 20px auto;
 }
 
+.p {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 140px;
+}
 
 .footer_container {
     grid-row: 4/5;
@@ -334,4 +344,3 @@ ul > li > i {
 }
 
 /* ****GRAPH***** */
-
