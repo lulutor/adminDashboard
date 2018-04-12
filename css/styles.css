@@ -178,10 +178,6 @@ li {
     width: 100px;
 }
 
-/************************MODAL*******************************/
-
-
-
 
 
 /* media querries */
@@ -324,16 +320,10 @@ ul > li > i {
     background-color: lightgray;
 }
 
-.container_chartjs {
-  width: 80%;
-  margin: 20px auto;
+.x{
+    grid-column: 2/3;
 }
 
-.p {
-  text-align: center;
-  font-size: 14px;
-  padding-top: 140px;
-}
 
 .footer_container {
     grid-row: 4/5;
@@ -343,4 +333,31 @@ ul > li > i {
 
 }
 
-/* ****GRAPH***** */
+/******** Produits********/
+
+.diaporama{
+  display: grid;
+  grid-template-rows: 80% 20%;
+  grid-row:3;
+  grid-column: 2/3;
+  text-align: center;
+}
+
+.diaporama_image{
+  grid-row: 1;
+}
+
+.diaporama_btns{
+  margin-top:20px;
+  grid-row: 2;
+
+}
+
+.diaporama_btns img{
+  width:60px;
+  height:90px;
+  text-align : center;
+  margin: 10px;
+
+
+}
