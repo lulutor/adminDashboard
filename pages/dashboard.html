@@ -54,15 +54,21 @@
             <div class="stat_container">
                 <div class="stat1 stat">
                     <div class="stat1_icon"><i class="fab fa-html5"></i></div>
-                    <div class="stat1_info"></div>
+                    <div class="stat_info">
+                      <h1>HTML</h1>
+                    </div>
                 </div>
-                <div class="stat2 stat">
+               <div class="stat2 stat">
                     <div class="stat2_icon"><i class="fab fa-css3-alt"></i></div>
-                    <div class="stat2_info"></div>
+                    <div class="stat_info">
+                      <h1>CSS3</h1>
+                    </div>
                 </div>
                 <div class="stat3 stat">
                     <div class="stat3_icon"><i class="fab fa-js"></i></div>
-                    <div class="stat3_info"></div>
+                    <div class="stat_info">
+                      <h1>Javascript</h1>
+                    </div>
                 </div>
             </div>
             <!--fin div stat_container-->
@@ -70,17 +76,26 @@
             <!--debut graphique container-->
 
             <div class="graphique_container">
+              <div class="chart-container">
+                  <canvas id="bar_chart"></canvas>
+              </div>
+              <div class="chart-container">
+                  <canvas id="doughnut_chart"></canvas>
+              </div>
+              <div class="chart-container">
+                  <canvas id="area_chart"></canvas>
+              </div>
             </div>
             <!--fin div graphique_container-->
 
             <!--debut footer container-->
             <div class="footer_container">
-              <a href="Produits">Produits</a>
+              <a href="produits.html">Produits</a>
             </div>  <!--fin footer container-->
         <!--fin block right-->
     </section>
 
 </body>
- <script src="../js/js.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
+  <script src="../js/chart.js"></script>
 </html>

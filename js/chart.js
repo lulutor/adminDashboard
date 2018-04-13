@@ -1,7 +1,10 @@
-var ctxLine = document.getElementById('line_chart').getContext('2d');
-var chart = new Chart(ctxLine, {
+
+///// CHART 1
+
+var ctxBar = document.getElementById('bar_chart').getContext('2d');
+var chart = new Chart(ctxBar, {
     // The type of chart we want to create
-    type: 'line',
+    type: 'bar',
 
     // The data for our dataset
     data: {
@@ -18,10 +21,45 @@ var chart = new Chart(ctxLine, {
     options: {}
 });
 
-var ctxRadar = document.getElementById('radar_chart').getContext('2d');
-var chart = new Chart(ctxRadar, {
+
+///// CHART 2
+
+
+
+
+
+var ctxDoughnut = document.getElementById('doughnut_chart').getContext('2d');
+var chart = new Chart(ctxDoughnut, {
     // The type of chart we want to create
-    type: 'radar',
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [{
+            label: "My First dataset",
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45],
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+
+
+///// CHART 3
+
+
+
+
+
+var ctxArea = document.getElementById('area_chart').getContext('2d');
+var chart = new Chart(ctxArea, {
+    // The type of chart we want to create
+    type: 'polarArea',
 
     // The data for our dataset
     data: {

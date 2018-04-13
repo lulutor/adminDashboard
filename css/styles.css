@@ -257,7 +257,7 @@ ul > li > i {
 .block_right {
     grid-column: 2/3;
     display: grid;
-    grid-template-rows: 10% 20% 60% 10%;
+    grid-template-rows: 10% 40% 40% 10;
     grid-gap: 10px;
 }
 
@@ -293,6 +293,13 @@ ul > li > i {
     color: white;
 }
 
+.stat_info{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .stat1_icon{
     background-color: rgb(48, 110, 204);
     display: flex;
@@ -315,11 +322,17 @@ ul > li > i {
 }
 
 .graphique_container {
-    grid-template-columns: 60% 40%;
-    grid-row: 3/4;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row: 3;
     background-color: lightgray;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
 }
 
+.chart-container {
+  display: inline-block;
+}
 
 
 .footer_container {
@@ -329,10 +342,6 @@ ul > li > i {
     justify-content: center;
     align-items: center;
 }
-
-
-
-
 
 
 
@@ -355,7 +364,6 @@ ul > li > i {
 .diaporama_btns{
   margin-top:20px;
   grid-row: 2;
-
 }
 
 .diaporama_btns img{
@@ -363,6 +371,4 @@ ul > li > i {
   height:90px;
   text-align : center;
   margin: 10px;
-
-
 }
