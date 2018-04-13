@@ -77,17 +77,3 @@ var chart = new Chart(ctxArea, {
 });
 
 // verification formulaire
-
-var users = [
-  {userName:"admin", password:"password"},
-  {userName: "lucas", password: "lucas"},
-  {userName: "invite", password:"invite"}
-]
-
-var nom = document.getElementById("username").value;
-var motDePasse= document.getElementById("password").value;
-var lienConection = document.getElementById("lien_validation");
-
-
-
-lienConection.setAttribute("href","pages/dashboard.html");
