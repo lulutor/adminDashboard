@@ -320,18 +320,23 @@ ul > li > i {
     background-color: lightgray;
 }
 
-.x{
-    grid-column: 2/3;
-}
 
 
 .footer_container {
-    grid-row: 4/5;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-row: 4;
     background-color: midnightblue;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+
+
+
+
+
 
 /******** Produits********/
 
