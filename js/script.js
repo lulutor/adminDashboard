@@ -17,14 +17,15 @@ var validation = function (utilisateur, motDePasse) {
   }
   return;
 }
-validate.addEventListener('click', function(){
+ validate.addEventListener('click', function(){
   var userNameSignIn = document.getElementById("username").value;
   var passwordSignIn = document.getElementById("password").value;
   validation(userNameSignIn, passwordSignIn);
 
-});
+})
 
 signUp.addEventListener('click', function() {
+  console.log("marche")
   var userNameSignUp = document.getElementById("username_sign_up").value;
   var passwordSignUp = document.getElementById("password_sign_up").value;
   users.push({userName: userNameSignUp, password: passwordSignUp});
