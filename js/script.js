@@ -10,9 +10,9 @@ var validation = function (utilisateur, motDePasse) {
   for(var i = 0; i < users.length; i++) {
     if(utilisateur === users[i].userName && motDePasse === users[i].password) {
       lienSignIn.setAttribute("href", "pages/dashboard.html")
-      document.getElementById("you_can").textContent = "You can sign in"
+      document.getElementById("you_can").textContent = "You can sign in";
     }else{
-      document.getElementById("you_can").textContent = "Wrong password"
+      document.getElementById("you_can").textContent = "Wrong password";
     }
   }
   return;
@@ -22,11 +22,4 @@ var validation = function (utilisateur, motDePasse) {
   var passwordSignIn = document.getElementById("password").value;
   validation(userNameSignIn, passwordSignIn);
 
-})
-
-signUp.addEventListener('click', function() {
-  console.log("marche")
-  var userNameSignUp = document.getElementById("username_sign_up").value;
-  var passwordSignUp = document.getElementById("password_sign_up").value;
-  users.push({userName: userNameSignUp, password: passwordSignUp});
 })
